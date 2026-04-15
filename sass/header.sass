@@ -1,0 +1,40 @@
+@import "vars"
+
+header
+    padding: 10px 0
+    width: 100%
+    background: #0E0E0E
+    border-bottom: 1px solid #2C3039
+    .container
+        padding: 0 10px
+    .row
+        margin: 0 -10px
+    .logo
+        margin: 0 auto 0 10px
+
+.logo
+    @include d-flex
+    max-width: 135px
+    width: 100%
+
+.nav-menu
+    margin: 0 auto
+
+.menu
+    display: flex
+    align-items: center
+    font-size: 12px
+    line-height: 120%
+    font-weight: normal
+    text-transform: uppercase
+    li
+        margin: 0 40px 0 0
+        &:last-child
+            margin: 0
+        a
+            color: #fff
+            &:hover
+                color: #8A9099
+
+.phone
+    
