@@ -189,19 +189,62 @@ button:hover, button:focus, .btn:hover, .btn:focus {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  padding: 10px 45px;
-  font-size: 16px;
-  font-weight: bold;
-  height: 46px;
-  border-radius: 10px;
+  padding: 10px 30px;
+  font-size: 14px;
+  line-height: 110%;
+  font-weight: normal;
+  height: 59px;
+  border-radius: 0;
+  text-transform: uppercase;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+
+.btn-lg {
+  height: 66px;
+}
+
+.btn-white {
+  background: #fff;
+  color: #0E0E0E;
+}
+.btn-white svg {
+  fill: #0E0E0E;
+}
+.btn-white:hover, .btn-white:focus {
+  background: #22262D;
+  color: #E6E8EB;
+}
+.btn-white:hover svg, .btn-white:focus svg {
+  fill: #E6E8EB;
+}
+
+.btn-dark {
+  background: #16181C;
+  color: #fff;
+}
+.btn-dark svg {
+  fill: #fff;
+}
+.btn-dark:hover, .btn-dark:focus {
+  background: #22262D;
+  color: #E6E8EB;
+}
+.btn-dark:hover svg, .btn-dark:focus svg {
+  fill: #E6E8EB;
 }
 
 .svg-icon {
   display: inline-block;
   width: 100%;
   height: 100%;
+}
+
+.btn-icon {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  margin: 0 20px 0 0;
 }
 
 strong, b {
@@ -232,6 +275,39 @@ ul, ol {
 }
 .row > * {
   padding: 0 10px;
+}
+
+.link {
+  color: #8A9099;
+}
+.link:hover {
+  color: #fff;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+h1, .h1 {
+  width: 100%;
+  font-size: 120px;
+  line-height: 90%;
+  letter-spacing: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+h3, .h3 {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+}
+
+.color-gray {
+  color: #C7CBD1;
 }
 
 .slick-slider {
