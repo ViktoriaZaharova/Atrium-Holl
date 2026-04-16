@@ -1,5 +1,12 @@
 @font-face {
   font-family: "Montserrat";
+  font-weight: 100;
+  font-style: normal;
+  src: url("../fonts/Montserrat/Montserrat-Thin.eot");
+  src: url("../fonts/Montserrat/Montserrat-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Thin.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
   font-weight: 300;
   font-style: normal;
   src: url("../fonts/Montserrat/Montserrat-Light.eot");
@@ -234,6 +241,24 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   fill: #E6E8EB;
 }
 
+.btn-border {
+  border: 1px solid #E6E8EB;
+  background: transparent;
+  color: #fff;
+  text-transform: none;
+}
+.btn-border svg {
+  fill: #fff;
+}
+.btn-border:hover, .btn-border:focus {
+  background: #22262D;
+  color: #E6E8EB;
+  border-color: #E6E8EB;
+}
+.btn-border:hover svg, .btn-border:focus svg {
+  fill: #E6E8EB;
+}
+
 .svg-icon {
   display: inline-block;
   width: 100%;
@@ -274,7 +299,7 @@ ul, ol {
   margin: 0 -40px;
 }
 .row > * {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .link {
@@ -288,6 +313,14 @@ ul, ol {
   margin-bottom: 10px;
 }
 
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
 h1, .h1 {
   width: 100%;
   font-size: 120px;
@@ -298,7 +331,17 @@ h1, .h1 {
   margin: 0 auto;
 }
 
+h2, .h2 {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 120%;
+  margin: 0 0 40px;
+}
+
 h3, .h3 {
+  width: 100%;
   font-size: 32px;
   font-weight: 300;
   line-height: 120%;
@@ -306,8 +349,24 @@ h3, .h3 {
   text-transform: uppercase;
 }
 
+h4, .h4 {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+  margin: 0 0 20px;
+}
+
 .color-gray {
   color: #C7CBD1;
+}
+
+.box-text {
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: -0.2px;
 }
 
 .slick-slider {

@@ -24,3 +24,131 @@
   line-height: 120%;
   letter-spacing: -1.6px;
 }
+
+.advantages {
+  padding: 120px 0 200px;
+  background: #0E0E0E;
+}
+
+.btn-location {
+  margin-left: auto;
+}
+
+.advantages-column:nth-child(even) {
+  padding-top: 190px;
+}
+
+.advantages-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.advantages-box__img {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.advantages-box__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.advantages-box__img::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background: #000;
+}
+.advantages-box__body {
+  width: 100%;
+  padding: 20px 0 0;
+}
+
+.benefits {
+  background: #fff;
+  color: #0E0E0E;
+}
+
+.benefits-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.benefits-row__content {
+  width: 50%;
+  padding: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.benefits-row__content span {
+  text-transform: uppercase;
+  color: #2C3039;
+  font-size: 26px;
+  line-height: 120%;
+}
+.benefits-row__content .h3 {
+  font-weight: 100;
+  font-size: 200px;
+  line-height: 120%;
+}
+.benefits-row__content .h3 span {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0 0 0 10px;
+}
+.benefits-row__content .h3 span sup {
+  font-size: 20px;
+  line-height: 100%;
+}
+.benefits-row__content .box-text {
+  margin: auto 0 0;
+  max-width: 300px;
+}
+.benefits-row__image {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.benefits-row__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
