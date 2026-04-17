@@ -152,3 +152,53 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.scene-section {
+  width: 100%;
+  text-align: center;
+  background: url("../img/scene.jpg") no-repeat center;
+  background-size: cover;
+  padding: 530px 0 390px;
+}
+.scene-section h2 {
+  margin: 0 auto;
+}
+
+.advantages-scene {
+  padding: 120px 0 200px;
+}
+
+.advantages-scene-column:nth-child(even) {
+  padding-top: 190px;
+}
+
+.services {
+  padding: 0 0 120px;
+}
+.services h2 {
+  padding-top: 120px;
+}
+
+.services-card {
+  padding: 120px 0 0 40px;
+  border-left: 1px solid #C7CBD1;
+}
+.services-card__number {
+  margin: 0 0 80px;
+  color: #E6E8EB;
+  font-size: 200px;
+  font-weight: 100;
+  line-height: 80%;
+  letter-spacing: -8px;
+}
+.services-card .box-text {
+  margin: 40px 0 0;
+}
+
+.services-card2 {
+  padding-top: 240px;
+}
+
+.services-card3 {
+  padding-top: 360px;
+}

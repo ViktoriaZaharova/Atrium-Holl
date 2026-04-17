@@ -317,6 +317,10 @@ ul, ol {
   margin-bottom: 40px;
 }
 
+.pt-120 {
+  padding-top: 120px;
+}
+
 .font-500 {
   font-weight: 500;
 }
@@ -361,6 +365,11 @@ h4, .h4 {
 
 .color-gray {
   color: #C7CBD1;
+}
+
+.bg-white {
+  background: #FFFFFC;
+  color: #0E0E0E;
 }
 
 .box-text {
