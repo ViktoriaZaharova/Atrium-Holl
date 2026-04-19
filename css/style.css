@@ -107,38 +107,59 @@ input, textarea, select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 0 15px;
+  padding: 0 0 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   border: none;
-  border-radius: 10px;
+  border-bottom: 1px solid #2C3039;
   width: 100%;
-  height: 54px;
+  height: 40px;
   background: transparent;
-  color: #000;
-  font-size: 15px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 110%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   cursor: pointer;
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
-  color: #595959;
+  color: #8A9099;
 }
 input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
-  color: #595959;
+  color: #8A9099;
 }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
-  color: #595959;
+  color: #8A9099;
 }
 input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
-  color: #595959;
+  color: #8A9099;
 }
 input::placeholder, textarea::placeholder, select::placeholder {
-  color: #595959;
+  color: #8A9099;
 }
 input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  border-color: #C7CBD1;
+  color: #fff;
+}
+input:hover::-webkit-input-placeholder, input:focus::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder, select:hover::-webkit-input-placeholder, select:focus::-webkit-input-placeholder {
+  color: #fff;
+}
+input:hover::-moz-placeholder, input:focus::-moz-placeholder, textarea:hover::-moz-placeholder, textarea:focus::-moz-placeholder, select:hover::-moz-placeholder, select:focus::-moz-placeholder {
+  color: #fff;
+}
+input:hover:-ms-input-placeholder, input:focus:-ms-input-placeholder, textarea:hover:-ms-input-placeholder, textarea:focus:-ms-input-placeholder, select:hover:-ms-input-placeholder, select:focus:-ms-input-placeholder {
+  color: #fff;
+}
+input:hover::-ms-input-placeholder, input:focus::-ms-input-placeholder, textarea:hover::-ms-input-placeholder, textarea:focus::-ms-input-placeholder, select:hover::-ms-input-placeholder, select:focus::-ms-input-placeholder {
+  color: #fff;
+}
+input:hover::placeholder, input:focus::placeholder, textarea:hover::placeholder, textarea:focus::placeholder, select:hover::placeholder, select:focus::placeholder {
+  color: #fff;
 }
 
 input[type=radio], input[type=checkbox] {
@@ -154,7 +175,7 @@ input[type=radio], input[type=checkbox] {
 label {
   display: block;
   width: 100%;
-  margin: 0 0 13px;
+  margin: 0 0 40px;
 }
 label:last-child {
   margin: 0;
@@ -302,6 +323,16 @@ ul, ol {
   padding: 0 5px;
 }
 
+.container-fluid {
+  padding: 0;
+}
+.container-fluid .row {
+  margin: 0;
+}
+.container-fluid .row > * {
+  padding: 0;
+}
+
 .link {
   color: #8A9099;
 }
@@ -319,6 +350,14 @@ ul, ol {
 
 .pt-120 {
   padding-top: 120px;
+}
+
+.pb-120 {
+  padding-bottom: 120px;
+}
+
+.p-200 {
+  padding: 200px 0;
 }
 
 .font-500 {
@@ -425,4 +464,115 @@ h4, .h4 {
 }
 .video-box source {
   width: 100%;
+}
+
+.ui-datepicker {
+  max-width: 406px;
+  width: 100%;
+  background: #16181C;
+  padding: 40px;
+  border: none;
+  border-radius: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.ui-datepicker.ui-widget.ui-widget-content {
+  border: none;
+}
+.ui-datepicker .ui-datepicker-header {
+  padding: 0;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 24px;
+}
+.ui-datepicker .ui-datepicker-title {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  text-align: left;
+  margin: 0 auto 0 0;
+  color: #C7CBD1;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.38px;
+}
+.ui-datepicker .ui-datepicker-next, .ui-datepicker .ui-datepicker-prev {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.ui-datepicker .ui-datepicker-next span, .ui-datepicker .ui-datepicker-prev span {
+  display: none;
+}
+.ui-datepicker .ui-datepicker-next {
+  background: url("../img/arrow-right.svg") no-repeat center;
+  background-size: 100%;
+  margin-left: 10px;
+}
+.ui-datepicker .ui-datepicker-prev {
+  background: url("../img/arrow-left.svg") no-repeat center;
+  background-size: 100%;
+}
+.ui-datepicker .ui-datepicker-calendar {
+  margin: 0;
+}
+.ui-datepicker th {
+  padding: 0 0 24px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 110%;
+  font-weight: normal;
+  color: #5F656E;
+}
+.ui-datepicker td {
+  padding: 0;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  background: transparent;
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+  line-height: 110%;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+  padding: 11px 2px;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  color: #00b9ee;
+}
+
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
+  opacity: 1;
+  color: #5F656E;
 }

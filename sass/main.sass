@@ -121,7 +121,7 @@
 .advantages-scene-column
     &:nth-child(even)
         padding-top: 190px
-    
+
 .services
     padding: 0 0 120px
     h2
@@ -146,6 +146,102 @@
 .services-card3
     padding-top: 360px
 
-.formats
-   
+.clients
+    overflow: hidden
+
+.clients-wrapper
+    width: 100%
+    display: flex
+    align-items: stretch
+    overflow-x: auto
+
+.client-box
+    min-width: 303px
+    width: 100%
+    max-width: 303px
+    margin-right: 5px
+    border-right: 1px solid #2C3039
+    @include d-flex
+
+.callback
+    background: url('../img/callback-bg.jpg') no-repeat center
+    background-size: cover
+
+.callback-wrapper
+    margin: 0 auto 0
+    width: 100%
+    max-width: 606px
+    background: #16181C
+    padding: 100px 40px
+
+.form-callback
+    margin: 0 auto
+    width: 100%
+    max-width: 406px
+    color: #8A9099
+    font-size: 18px
+    line-height: 110%
+
+.form-footer
+    width: 100%
+    margin: 40px 0 0
+
+.consent
+    margin: 0 auto 20px
+    font-size: 12px
+    line-height: 120%
+    text-align: center
+
+.datepicker
+    background: url('../img/arrow-bottom.svg') no-repeat 100% top
+    background-size: 22px
+
+.number-guests
+    width: 100%
+    display: flex
+    align-items: center
+    .amount
+        margin-left: auto
+    &:hover
+        color: #fff
+    &.is-active
+        color: #fff
+        input
+            color: #fff
+            border-color: #fff
+
+.amount
+    width: 94px
+    height: 52px
+    position: relative
+    z-index: 1
+
+    input
+        width: 100%
+        height: 100%
+        text-align: left
+        background: transparent
+        color: #8A9099
+        font-size: 18px
+        line-height: 110%
+        padding: 4px 42px 4px 20px
+        border: 1px solid #2C3039
+        border-radius: 0
+        &:focus, &:active, &:validate
+            color: #fff
+            border-color: #fff
+    span
+        fill: none
+        width: 22px
+        height: 22px
+        stroke: #fff
+        position: absolute
+        right: 22px
+        cursor: pointer
+        @include d-flex
+    &-up
+        top: 4px
+    &-down
+        bottom: 4px
+    
 

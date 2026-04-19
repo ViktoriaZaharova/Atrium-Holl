@@ -1,2 +1,87 @@
 $('[name="phone"]').mask('+7 (999) 999-99-99');
 
+$.datepicker.regional['ru'] = {
+    closeText: 'Закрыть',
+    prevText: 'Предыдущий',
+    nextText: 'Следующий',
+    currentText: 'Сегодня',
+    monthNames: [
+        'Январь','Февраль','Март','Апрель','Май','Июнь',
+        'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'
+    ],
+    monthNamesShort: [
+        'Янв','Фев','Мар','Апр','Май','Июн',
+        'Июл','Авг','Сен','Окт','Ноя','Дек'
+    ],
+    dayNames: [
+        'воскресенье','понедельник','вторник','среда',
+        'четверг','пятница','суббота'
+    ],
+    dayNamesShort: [
+        'вс','пн','вт','ср','чт','пт','сб'
+    ],
+    dayNamesMin: [
+        'Вс','Пн','Вт','Ср','Чт','Пт','Сб'
+    ],
+    weekHeader: 'Нед',
+    dateFormat: 'dd.mm.yy',
+    firstDay: 1,
+    isRTL: false,
+    showMonthAfterYear: false,
+    yearSuffix: ''
+};
+
+$.datepicker.setDefaults($.datepicker.regional['ru']);
+
+$('.datepicker').datepicker({
+    dateFormat: 'dd.mm.yy',
+    // changeMonth: true,
+    showOtherMonths: true,
+    selectOtherMonths: true
+});
+
+function updateAmountState(input) {
+    var value = parseInt($(input).val()) || 0;
+    var block = $(input).closest('.number-guests');
+
+    if (value > 0) {
+        block.addClass('is-active');
+    } else {
+        block.removeClass('is-active');
+    }
+}
+
+// минус
+$('.amount-down').on('click', function () {
+    var input = $(this).closest('.amount').find('input');
+    var count = parseInt(input.val()) - 1;
+
+    count = count < 1 ? 1 : count;
+
+    input.val(count).change();
+    updateAmountState(input);
+
+    return false;
+});
+
+// плюс
+$('.amount-up').on('click', function () {
+    var input = $(this).closest('.amount').find('input');
+    var count = (parseInt(input.val()) || 0) + 1;
+
+    input.val(count).change();
+    updateAmountState(input);
+
+    return false;
+});
+
+// ручной ввод
+$('.amount input').on('input', function () {
+    $(this).val($(this).val().replace(/[^\d]/g, ''));
+    updateAmountState(this);
+});
+
+// при загрузке
+$('.amount input').each(function () {
+    updateAmountState(this);
+});

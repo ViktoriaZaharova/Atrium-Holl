@@ -13,6 +13,7 @@
   <!-- add plugins css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
   <!-- add plugins css end -->
 
   <link rel="stylesheet" href="css/style.css">
@@ -338,23 +339,117 @@
     </div>
   </section>
 
-  <section class="">
+  <section class="variable p-200" id="variable">
     <div class="container">
       <div class="row">
-
+        <div class="col-12">
+          <h2>Варианты рассадки</h2>
+        </div>
       </div>
     </div>
   </section>
 
 
-  <section class="">
+  <section class="prices bg-white" id="prices">
     <div class="container">
       <div class="row">
-
+        <div class="col-12 col-lg-6">
+          <h2>Прайс</h2>
+        </div>
       </div>
     </div>
   </section>
 
+  <section class="question" id="question">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h2>Часто задаваемые вопросы</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="clients pb-120" id="clients">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-40 text-center">
+          <h2>Наши клиенты</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="clients-wrapper">
+      <div class="client-box"><img src="img/client1.svg" alt=""></div>
+      <div class="client-box"><img src="img/client2.svg" alt=""></div>
+      <div class="client-box"><img src="img/client3.svg" alt=""></div>
+      <div class="client-box"><img src="img/client4.svg" alt=""></div>
+      <div class="client-box"><img src="img/client5.svg" alt=""></div>
+      <div class="client-box"><img src="img/client6.svg" alt=""></div>
+      <div class="client-box"><img src="img/client2.svg" alt=""></div>
+    </div>
+  </section>
+
+  <section class="callback p-200">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 offset-lg-3 col-lg-6 text-center mb-40">
+          <h2>ХОТИТЕ ПРОВЕСТИ НЕЗАБЫВАЕМОЕ МЕРОПРИЯТИЕ В АТРИУМ ХОЛЛ?</h2>
+          <div class="box-text">
+            <p>Оставляйте заявку, и мы вам перезвоним!</p>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="callback-wrapper">
+            <form method="post" class="form-callback">
+              <label>
+                <input type="text" placeholder="Имя" name="name">
+              </label>
+              <label>
+                <input type="text" placeholder="Телефон" name="phone" required>
+              </label>
+              <label class="label-datepicker">
+                <input type="text" name="datepicker" class="datepicker" placeholder="Дата мероприятия">
+              </label>
+
+              <div class="number-guests">
+                <p>Количество гостей:</p>
+             
+              <label class="label-number-guests amount">
+                <span class="amount-up"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-top"></use>
+                  </svg></span>
+                <input type="text" name="number_guests" value="0">
+                <span class="amount-down"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg></span>
+              </label>
+ </div>
+              <div class="form-footer">
+                <div class="consent">Нажимая на кнопку, вы соглашаетесь <br>
+                с политикой конфиденциальности</div>
+
+              <button class="btn btn-white m-auto" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts" id="contacts">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-6"></div>
+        <div class="col-12 col-lg-6">
+          <div class="map-wrapper"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <div class="container">
@@ -369,6 +464,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
   <!-- add plugins js end-->
 
   <script src="js/common.js"></script>
