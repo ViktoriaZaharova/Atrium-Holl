@@ -20,6 +20,8 @@ header
 
 .nav-menu
     margin: 0 auto
+    .btn-callback
+        display: none
 
 .menu
     display: flex
@@ -44,3 +46,30 @@ header
     color: #fff
     &:hover
         color: $dark-2
+
+.btn-burger
+    width: 63px
+    height: 60px
+    min-width: 63px
+    background: url('../img/burger-icon.svg') no-repeat center
+    background-size: 40px
+    &.click
+        background: url('../img/close-icon.svg') no-repeat center
+        background-size: 40px
+
+.menu-overlay
+    position: fixed
+    top: 61px
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(#0E0E0E,.7)
+    // backdrop-filter: blur(3px)
+    z-index: 8
+    opacity: 0
+    visibility: hidden
+    transition: .3s
+    &.show
+        opacity: 1
+        visibility: visible
+

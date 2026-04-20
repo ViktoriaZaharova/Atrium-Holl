@@ -32,6 +32,9 @@ header .logo {
 .nav-menu {
   margin: 0 auto;
 }
+.nav-menu .btn-callback {
+  display: none;
+}
 
 .menu {
   display: -webkit-box;
@@ -66,4 +69,34 @@ header .logo {
 }
 .phone:hover {
   color: #16181C;
+}
+
+.btn-burger {
+  width: 63px;
+  height: 60px;
+  min-width: 63px;
+  background: url("../img/burger-icon.svg") no-repeat center;
+  background-size: 40px;
+}
+.btn-burger.click {
+  background: url("../img/close-icon.svg") no-repeat center;
+  background-size: 40px;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 61px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(14, 14, 14, 0.7);
+  z-index: 8;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.menu-overlay.show {
+  opacity: 1;
+  visibility: visible;
 }

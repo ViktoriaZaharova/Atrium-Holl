@@ -24,7 +24,7 @@
 </head>
 
 <body>
-
+<div class="menu-overlay"></div>
   <header>
     <div class="container">
       <div class="row">
@@ -41,10 +41,11 @@
               <li><a href="#question" class="go_to">Вопросы</a></li>
               <li><a href="#contacts" class="go_to">Контакты</a></li>
             </ul>
+            <a href="#" class="btn btn-white btn-callback" data-bs-toggle="modal" data-bs-target="#callbackModal">Оставить заявку</a>
           </nav>
 
           <a href="tel:+79374140234" class="phone">8 (937) 414-02-34</a>
-          <a href="#" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#callbackModal">Оставить заявку</a>
+          <a href="#" class="btn btn-white btn-callback" data-bs-toggle="modal" data-bs-target="#callbackModal">Оставить заявку</a>
 
           <a href="#" class="btn-burger"></a>
         </div>
@@ -59,7 +60,7 @@
           <h1>Атриум холл</h1>
           <div class="subtitle-text color-gray h3 mb-10">Создан впечатлять</div>
         </div>
-        <div class="col-12 mb-10">
+        <div class="col-12 mb-10 d-none d-lg-block">
           <a href="#" class="btn btn-dark btn-lg btn-book" data-bs-toggle="modal" data-bs-target="#bookModal">
             <svg class="svg-icon btn-icon">
               <use xlink:href="img/sprite.svg#lock-icon"></use>
@@ -76,6 +77,12 @@
               <source src="img/atrium-video.mp4" type="video/mp4" />
             </video>
           </div>
+        </div>
+
+        <div class="col-12 d-block d-lg-none">
+          <a href="#" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#callbackModal">
+            <span>Оставить заявку</span>
+          </a>
         </div>
       </div>
     </div>
@@ -344,6 +351,7 @@
       <div class="row">
         <div class="col-12">
           <h2>Варианты рассадки</h2>
+
         </div>
       </div>
     </div>
