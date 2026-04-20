@@ -416,22 +416,22 @@
 
               <div class="number-guests">
                 <p>Количество гостей:</p>
-             
-              <label class="label-number-guests amount">
-                <span class="amount-up"><svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#arrow-top"></use>
-                  </svg></span>
-                <input type="text" name="number_guests" value="0">
-                <span class="amount-down"><svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
-                  </svg></span>
-              </label>
- </div>
+
+                <label class="label-number-guests amount">
+                  <span class="amount-up"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-top"></use>
+                    </svg></span>
+                  <input type="text" name="number_guests" value="0">
+                  <span class="amount-down"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                    </svg></span>
+                </label>
+              </div>
               <div class="form-footer">
                 <div class="consent">Нажимая на кнопку, вы соглашаетесь <br>
-                с политикой конфиденциальности</div>
+                  с политикой конфиденциальности</div>
 
-              <button class="btn btn-white m-auto" type="submit">Отправить</button>
+                <button class="btn btn-white m-auto" type="submit">Отправить</button>
               </div>
             </form>
           </div>
@@ -441,11 +441,44 @@
   </section>
 
   <section class="contacts" id="contacts">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-6"></div>
         <div class="col-12 col-lg-6">
-          <div class="map-wrapper"></div>
+          <div class="contacts-content w-100">
+            <div class="contacts-content-row">
+              <div class="contacts-card">
+                <span>Телефон бронирования:</span>
+                <a href="tel:+79374140234" class="h2">8 (937) 414-02-34</a>
+              </div>
+
+              <div class="contacts-card address-card">
+                <span>Адрес:</span>
+                <p>г. Пенза, <br>
+                  ул. Кирова, 56, 10 этаж</p>
+              </div>
+
+            </div>
+            <ul class="list-social my-ul">
+              <li>
+                <a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#vk-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#tg-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="contacts-content__img"><img src="img/contact-img.png" alt=""></div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="map-wrapper" id="map"></div>
         </div>
       </div>
     </div>
@@ -454,7 +487,29 @@
   <footer>
     <div class="container">
       <div class="row">
+        <div class="col-12 col-lg-3">
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
+        </div>
+
+        <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center align-items-center">
+          <ul class="menu-document my-ul">
+            <li><a href="#">Положение об обработке персональных данных</a></li>
+            <li><a href="#">Пользовательское соглашение</a></li>
+          </ul>
+
+          <ul class="menu-document my-ul">
+            <li><a href="#">Согласие на обработку данных метрическими программами</a></li>
+            <li><a href="#">Согласие на обработку персональных данных</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-lg-3">
+          <a href="index.html" class="logo-developer">
+            <span>Разработано</span><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#logo-developer"></use>
+            </svg></a>
+        </div>
       </div>
     </div>
   </footer>
@@ -465,6 +520,7 @@
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/jquery-ui.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <!-- add plugins js end-->
 
   <script src="js/common.js"></script>

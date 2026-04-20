@@ -343,3 +343,120 @@
 .amount-down {
   bottom: 4px;
 }
+
+.contacts {
+  position: relative;
+  overflow: hidden;
+}
+
+.map-wrapper {
+  width: calc(100% + 40px);
+  height: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.custom-pin {
+  width: 54px;
+  height: 67px;
+  background: url("img/pin.svg") center contain no-repeat;
+}
+
+.contacts-content {
+  padding: 120px 0 0;
+}
+.contacts-content__img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts-content-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts-card {
+  margin: 0 120px 20px 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: -1px;
+}
+.contacts-card:last-child {
+  margin-right: 0;
+}
+.contacts-card span {
+  display: block;
+  color: #5F656E;
+  font-size: 12px;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+.contacts-card a {
+  color: #fff;
+  margin: 0;
+}
+.contacts-card a:hover {
+  color: #5F656E;
+}
+
+.list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.list-social li a {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 0 0;
+  fill: #8A9099;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.list-social li a:last-child {
+  margin: 0;
+}
+.list-social li a:hover {
+  fill: #fff;
+}

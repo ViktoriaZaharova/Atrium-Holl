@@ -1,28 +1,56 @@
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 100;
-  font-style: normal;
-  src: url("../fonts/Montserrat/Montserrat-Thin.eot");
-  src: url("../fonts/Montserrat/Montserrat-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Thin.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Thin.ttf") format("truetype");
+footer {
+  padding: 20px 0;
 }
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 300;
-  font-style: normal;
-  src: url("../fonts/Montserrat/Montserrat-Light.eot");
-  src: url("../fonts/Montserrat/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+
+.menu-document {
+  font-size: 12px;
+  line-height: 120%;
+  margin: 0 40px 0 0;
 }
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/Montserrat/Montserrat-Regular.eot");
-  src: url("../fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+.menu-document:last-child {
+  margin: 0;
 }
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 500;
-  font-style: normal;
-  src: url("../fonts/Montserrat/Montserrat-Medium.eot");
-  src: url("../fonts/Montserrat/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+.menu-document li {
+  margin: 0 0 10px;
+}
+.menu-document li:last-child {
+  margin: 0;
+}
+.menu-document li a {
+  color: #8A9099;
+}
+.menu-document li a:hover {
+  color: #fff;
+}
+
+.logo-developer {
+  margin-left: auto;
+  max-width: 125px;
+  width: 100%;
+  fill: #5F656E;
+  color: #5F656E;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.logo-developer svg {
+  height: 31px;
+}
+.logo-developer span {
+  display: block;
+  margin: 0 0 8px;
+}
+.logo-developer:hover {
+  color: #fff;
+  fill: #fff;
 }

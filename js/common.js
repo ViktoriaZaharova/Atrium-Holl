@@ -85,3 +85,34 @@ $('.amount input').on('input', function () {
 $('.amount input').each(function () {
     updateAmountState(this);
 });
+
+// map
+$(function () {
+
+    ymaps.ready(init);
+
+    function init() {
+
+        const map = new ymaps.Map("map", {
+            center: [53.193415, 45.018570],
+            zoom: 15,
+            controls: []
+        });
+
+        map.behaviors.disable('scrollZoom');
+
+        const placemark = new ymaps.Placemark(
+            [53.193415, 45.018570],
+            {},
+            {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/pin.svg',
+                iconImageSize: [54, 67],
+                iconImageOffset: [-27, -67]
+            }
+        );
+
+        map.geoObjects.add(placemark);
+    }
+
+});
