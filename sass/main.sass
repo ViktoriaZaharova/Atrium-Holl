@@ -58,6 +58,11 @@
             height: 100%
             opacity: 0.2
             background: #000
+            transition: .3s ease
+    &:hover
+        .advantages-box__img
+            &::before
+                opacity: 0
     &__body
         width: 100%
         padding: 20px 0 0
@@ -310,3 +315,77 @@
                 margin: 0
             &:hover
                 fill: #fff
+
+// question
+.question
+    overflow: hidden
+
+.accordion
+    border: none
+    border-radius: 0
+
+.accordion-item
+    background: transparent
+    border: none
+    border-radius: 0
+    color: #8A9099
+    margin: 0 0 40px
+    padding: 0 0 40px
+    position: relative
+    z-index: 1
+    &::before
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        width: calc( 100% + 40px )
+        height: 1px
+        background: #2C3039
+
+    &:last-child
+        margin: 0
+    &:has(.accordion-button:not(.collapsed))::before
+        background: #C7CBD1
+
+.accordion-item:first-of-type, .accordion-item:first-of-type .accordion-button, .accordion-item:last-of-type .accordion-button.collapsed, .accordion-item:last-of-type
+    border-radius: 0
+
+.accordion-button
+    background: transparent
+    padding: 0
+    margin: 0
+    font-size: 20px
+    line-height: 120%
+    color: #8A9099
+    letter-spacing: -0.5px
+    text-transform: uppercase
+    border: none
+    border-radius: 0
+    display: flex
+    align-items: flex-start
+    span
+        max-width: 650px
+    &:after
+        display: none
+    &__icon
+        width: 22px
+        height: 22px
+        fill: none
+        stroke: #FFFFFF
+        margin: 0 40px 0 auto
+
+    &:not(.collapsed)
+        box-shadow: none
+        color: #fff
+        background: transparent
+        .accordion-button
+            &__icon
+                transform: rotate(180deg)
+    &:focus
+        box-shadow: none
+
+.accordion-body
+    padding: 20px 0 0
+    font-weight: normal
+    .box-text
+        max-width: 873px

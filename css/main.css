@@ -74,6 +74,11 @@
   height: 100%;
   opacity: 0.2;
   background: #000;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.advantages-box:hover .advantages-box__img::before {
+  opacity: 0;
 }
 .advantages-box__body {
   width: 100%;
@@ -459,4 +464,97 @@
 }
 .list-social li a:hover {
   fill: #fff;
+}
+
+.question {
+  overflow: hidden;
+}
+
+.accordion {
+  border: none;
+  border-radius: 0;
+}
+
+.accordion-item {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  color: #8A9099;
+  margin: 0 0 40px;
+  padding: 0 0 40px;
+  position: relative;
+  z-index: 1;
+}
+.accordion-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: calc(100% + 40px);
+  height: 1px;
+  background: #2C3039;
+}
+.accordion-item:last-child {
+  margin: 0;
+}
+.accordion-item:has(.accordion-button:not(.collapsed))::before {
+  background: #C7CBD1;
+}
+
+.accordion-item:first-of-type, .accordion-item:first-of-type .accordion-button, .accordion-item:last-of-type .accordion-button.collapsed, .accordion-item:last-of-type {
+  border-radius: 0;
+}
+
+.accordion-button {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  line-height: 120%;
+  color: #8A9099;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.accordion-button span {
+  max-width: 650px;
+}
+.accordion-button:after {
+  display: none;
+}
+.accordion-button__icon {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: #FFFFFF;
+  margin: 0 40px 0 auto;
+}
+.accordion-button:not(.collapsed) {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+  background: transparent;
+}
+.accordion-button:not(.collapsed) .accordion-button__icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.accordion-body {
+  padding: 20px 0 0;
+  font-weight: normal;
+}
+.accordion-body .box-text {
+  max-width: 873px;
 }
