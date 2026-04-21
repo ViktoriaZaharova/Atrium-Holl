@@ -417,12 +417,9 @@ h4, .h4 {
   letter-spacing: -0.2px;
 }
 
-.slick-slider {
-  width: 100%;
-}
-
-.slick-slide {
-  outline: none;
+.text-small {
+  font-size: 12px;
+  line-height: 120%;
 }
 
 .label-checkbox {
@@ -474,6 +471,7 @@ h4, .h4 {
   border: none;
   border-radius: 0;
   font-family: "Montserrat", sans-serif;
+  z-index: 1100 !important;
 }
 .ui-datepicker.ui-widget.ui-widget-content {
   border: none;

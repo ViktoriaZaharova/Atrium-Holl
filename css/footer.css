@@ -54,3 +54,78 @@ footer {
   color: #fff;
   fill: #fff;
 }
+
+.modal-dialog {
+  max-width: 606px;
+}
+
+.modal-content {
+  background: #16181C;
+  border: none;
+  border-radius: 0;
+  padding: 60px;
+  position: relative;
+  z-index: 1;
+}
+.modal-content .form-callback {
+  max-width: none;
+}
+
+.modal-header {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.modal-header .btn-close {
+  background: transparent;
+  stroke: #8A9099;
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  cursor: pointer;
+  padding: 0;
+  width: 42px;
+  height: 36px;
+  border: none;
+  border-radius: 0;
+  top: 24px;
+  right: 24px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal-body {
+  padding: 0;
+  margin: 40px 0 0;
+}
+
+.modal-backdrop {
+  background: #0E0E0E;
+}
+.modal-backdrop.show {
+  opacity: 0.5;
+}
+
+.thanks-check {
+  margin: 0 auto 20px;
+  width: 47px;
+  height: 47px;
+  border: 1px solid #2C3039;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

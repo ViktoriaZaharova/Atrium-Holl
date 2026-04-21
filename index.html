@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/fancybox.css">
+
   <!-- add plugins css end -->
 
   <link rel="stylesheet" href="css/style.css">
@@ -602,12 +604,81 @@
     </div>
   </footer>
 
+  <!-- Modal -->
+  <div class="modal fade" id="callbackModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title h4">ХОТИТЕ ПРОВЕСТИ НЕЗАБЫВАЕМОЕ МЕРОПРИЯТИЕ В АТРИУМ ХОЛЛ?</div>
+          <div class="box-text">
+            <p>Оставляйте заявку, и мы вам перезвоним!</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#close-icon"></use>
+            </svg></button>
+        </div>
+        <div class="modal-body">
+          <form method="post" class="form-callback">
+            <label>
+              <input type="text" placeholder="Имя" name="name">
+            </label>
+            <label>
+              <input type="text" placeholder="Телефон" name="phone" required>
+            </label>
+            <label class="label-datepicker">
+              <input type="text" name="datepicker" class="datepicker" placeholder="Дата мероприятия">
+            </label>
+
+            <div class="number-guests">
+              <p>Количество гостей:</p>
+
+              <label class="label-number-guests amount">
+                <span class="amount-up"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-top"></use>
+                  </svg></span>
+                <input type="text" name="number_guests" value="0">
+                <span class="amount-down"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg></span>
+              </label>
+            </div>
+            <div class="form-footer">
+              <div class="consent">Нажимая на кнопку, вы соглашаетесь <br>
+                с политикой конфиденциальности</div>
+
+              <button class="btn btn-white m-auto" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="thanksModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="thanks-check"><img src="img/check-icon.svg" alt=""></div>
+          <div class="modal-title h4">Спасибо!</div>
+          <div class="text-small text-uppercase">
+            <p>Мы получили ваши данные, <br>
+              и свяжемся с вами в ближайшее время!</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#close-icon"></use>
+            </svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- add plugins js-->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/jquery-ui.js"></script>
+  <script src="js/fancybox.umd.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <!-- add plugins js end-->
 
