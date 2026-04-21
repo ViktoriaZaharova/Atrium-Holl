@@ -85,6 +85,12 @@
   width: 100%;
   padding: 20px 0 0;
 }
+.advantages-box h4, .advantages-box .h4 {
+  margin: 0;
+}
+.advantages-box .box-text {
+  margin: 20px 0 0;
+}
 
 .benefits {
   background: #fff;
@@ -531,6 +537,7 @@
   display: none;
 }
 .accordion-button__icon {
+  min-width: 22px;
   width: 22px;
   height: 22px;
   fill: none;
