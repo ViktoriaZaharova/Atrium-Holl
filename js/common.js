@@ -132,3 +132,40 @@ $('.menu-overlay').on('click', function () {
     $(this).removeClass('show');
     $('body').removeClass('no-scroll');
 });
+
+// tabs+accordion
+$(function(){
+
+  $('.price-tabs .nav-link').on('shown.bs.tab', function () {
+    let target = $(this).data('bs-target');
+
+    $('#priceAccordion .accordion-collapse').removeClass('show');
+    $('#priceAccordion ' + target.replace('#tab', '#mob')).addClass('show');
+  });
+
+  $('#priceAccordion .accordion-collapse').on('shown.bs.collapse', function () {
+    let id = $(this).attr('id').replace('mob', 'tab');
+
+    $('.price-tabs .nav-link').removeClass('active');
+    $('.price-tabs .nav-link[data-bs-target="#' + id + '"]').addClass('active');
+  });
+
+});
+
+
+$(function(){
+
+  $('.seating-tabs .nav-link').on('shown.bs.tab', function () {
+    let target = $(this).data('bs-target');
+    $('#seatAccordion .accordion-collapse').removeClass('show');
+    $('#seatAccordion ' + target.replace('#seat', '#mobSeat')).addClass('show');
+  });
+
+  $('#seatAccordion .accordion-collapse').on('shown.bs.collapse', function () {
+    let id = $(this).attr('id').replace('mobSeat', 'seat');
+
+    $('.seating-tabs .nav-link').removeClass('active');
+    $('.seating-tabs .nav-link[data-bs-target="#' + id + '"]').addClass('active');
+  });
+
+});

@@ -68,7 +68,7 @@ input, textarea, select
   outline: none
   box-shadow: none
   appearance: none
-  padding: 0 0 20px 
+  padding: 0 0 20px
   box-sizing: border-box
   font-family: $default-font
   border: none
@@ -206,6 +206,19 @@ ul, ol
 .list-dots
   list-style-type: disc
 
+.list-cube
+  li
+    display: flex
+    align-items: flex-start
+    &::before
+      content: ''
+      width: 4px
+      height: 4px
+      min-width: 4px
+      background: #D9D9D9
+      margin: 10px 10px 0 0
+
+
 .container
   max-width: 1920px
   padding: 0 40px
@@ -236,13 +249,11 @@ ul, ol
 .pt-120
   padding-top: 120px
 
-.pb-120    
+.pb-120
   padding-bottom: 120px
 
 .p-200
   padding: 200px 0
-
-
 
 .font-500
   font-weight: 500
@@ -296,6 +307,10 @@ h4, .h4
 .text-small
   font-size: 12px
   line-height: 120%
+
+
+.text-transform-none
+  text-transform: none
 
 //checkbox my
 .label-checkbox
@@ -378,9 +393,9 @@ h4, .h4
     background: url('../img/arrow-right.svg') no-repeat center
     background-size: 100%
     margin-left: 10px
-  .ui-datepicker-prev 
+  .ui-datepicker-prev
     background: url('../img/arrow-left.svg') no-repeat center
-    background-size: 100%  
+    background-size: 100%
   .ui-datepicker-calendar
     margin: 0
   th
@@ -392,7 +407,7 @@ h4, .h4
     color: #5F656E
   td
     padding: 0
-    
+
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
   background: transparent
   width: 100%

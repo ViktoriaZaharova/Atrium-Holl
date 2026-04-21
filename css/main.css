@@ -569,3 +569,137 @@
 .accordion-body .box-text {
   max-width: 873px;
 }
+
+.prices {
+  overflow: hidden;
+}
+
+.prices-content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 120px 0;
+}
+.prices-content .nav-tabs {
+  margin: 0 0 100px;
+}
+
+.nav-tabs {
+  max-width: 607px;
+  width: 100%;
+  font-size: 24px;
+}
+.nav-tabs .nav-item {
+  width: 100%;
+  margin: 0 0 30px;
+}
+.nav-tabs .nav-item:last-child {
+  margin: 0;
+}
+.nav-tabs .nav-link {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  text-align: left;
+  padding: 0 0 20px;
+  text-transform: uppercase;
+  color: #8A9099;
+}
+.nav-tabs .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: calc(100% + 40px);
+  height: 1px;
+  background: #C7CBD1;
+}
+.nav-tabs .nav-link.active::before {
+  background: #0E0E0E;
+}
+
+.btn-book-event {
+  margin: auto 0 0;
+}
+
+.tab-content-prices {
+  width: 100%;
+  height: 100%;
+  padding: 120px 0 120px 40px;
+  border-left: 1px solid #C7CBD1;
+}
+
+.price-card {
+  width: 100%;
+  margin: 0 0 40px;
+  position: relative;
+  z-index: 1;
+  padding: 40px 0 0;
+}
+.price-card:first-child {
+  padding-top: 0;
+}
+.price-card:first-child::before {
+  display: none;
+}
+.price-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc(100% + 40px);
+  height: 1px;
+  background: #C7CBD1;
+}
+.price-card:last-child {
+  margin: 0;
+}
+.price-card .h4 {
+  margin: 0 0 30px;
+  max-width: 590px;
+  width: 100%;
+}
+.price-card .box-text {
+  color: #5F656E;
+}
+.price-card .box-text ul li {
+  margin: 0 0 10px;
+}
+.price-card .box-text ul li:last-child {
+  margin: 0;
+}
+.price-card__description {
+  width: 100%;
+  margin: 30px 0 0;
+  padding: 8px 10px;
+  color: #5F656E;
+  background: #E6E8EB;
+}
+.price-card .h2 {
+  text-transform: none;
+  margin: 0 0 10px;
+}
+
+.price-big {
+  font-size: 100px;
+  line-height: 80%;
+  letter-spacing: -4px;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+.price-big span {
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: -1.3px;
+}

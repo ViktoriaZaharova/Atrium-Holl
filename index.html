@@ -65,7 +65,7 @@
           <div class="subtitle-text color-gray h3 mb-10">Создан впечатлять</div>
         </div>
         <div class="col-12 mb-10 d-none d-lg-block">
-          <a href="#" class="btn btn-dark btn-lg btn-book" data-bs-toggle="modal" data-bs-target="#bookModal">
+          <a href="#" class="btn btn-dark btn-lg btn-book" data-bs-toggle="modal" data-bs-target="#callbackModal">
             <svg class="svg-icon btn-icon">
               <use xlink:href="img/sprite.svg#lock-icon"></use>
             </svg>
@@ -365,7 +365,168 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-6">
-          <h2>Прайс</h2>
+          <div class="prices-content">
+            <h2>Прайс</h2>
+
+            <ul class="nav nav-tabs flex-column price-tabs d-none d-lg-flex my-ul" id="priceTabs" role="tablist">
+              <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1" type="button">
+                  Аренда банкетного зала
+
+                </button>
+              </li>
+
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2" type="button">
+                  Почасовая аренда банкетного зала
+                </button>
+              </li>
+
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3" type="button">
+                  Мероприятие под ключ
+                </button>
+              </li>
+            </ul>
+
+            <a href="#" class="btn btn-dark btn-book-event" data-bs-toggle="modal"
+              data-bs-target="#callbackModal"><span>Забронировать
+                мероприятие</span></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+
+          <!-- DESKTOP TABS -->
+          <div class="tab-content tab-content-prices d-none d-lg-block">
+
+            <div class="tab-pane fade show active" id="tab1">
+              <div class="price-card">
+                <div class="h4">Аренда зала для мероприятий:</div>
+                <div class="price-big">120 000 <span>руб</span></div>
+                <div class="box-text">
+                  <ul class="list-cube my-ul">
+                    <li>До 100 гостей - за весь день мероприятия (до 23:00)*.</li>
+                    <li>Более 100 гостей - за каждого гостя дополнительно оплачивается 2 000 рублей (например, 120
+                      гостей
+                      - 140 000 рублей).</li>
+                  </ul>
+                </div>
+
+                <div class="price-card__description">
+                  <p>*Время начала мероприятия обговаривается индивидуально в зависимости от потребностей клиента.</p>
+                </div>
+              </div>
+
+              <div class="price-card">
+                <div class="h4">Проведение презентаций, конференций и других дневных мероприятий:</div>
+                <div class="price-big">70 000 <span>руб</span></div>
+                <div class="box-text">
+                  <ul class="list-cube my-ul">
+                    <li>С 10:00 до 17:00</li>
+                    <li>После 17:00 - за каждый час 5 000 рублей.</li>
+                  </ul>
+                </div>
+
+                <div class="price-card__description">
+                  <p>Время начала и окончания мероприятия обговаривается индивидуально в зависимости от потребностей
+                    клиента.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="tab2">
+              <div class="price-card">
+                <div class="h4">Аренда площадки для проведения фото- и видеосъемки:</div>
+                <div class="price-big">3 000 <span>руб/час </span></div>
+                <div class="box-text">
+                  <ul class="list-cube my-ul">
+                    <li>Аренда производится от 3х часов, далее каждый дополнительный час - 3000 рублей.</li>
+                    <li>В вашем распоряжении будет целый зал, открытая видовая терраса. Использование крыши банкетного
+                      зала - по запросу.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="tab3">
+              <div class="price-card">
+                <div class="h4">Организация и координация мероприятия под ключ:</div>
+                <div class="h2">По договоренности </div>
+                <div class="h4 mb-40 text-transform-none">5% от общей суммы сметы</div>
+                <div class="box-text mb-40">
+                  <p>Стоимость организации/координации мероприятия зависит от множества факторов, таких как: формат и
+                    концепция проводимого торжества, масштаб декора зала, потребуется ли дополнительное техническое
+                    оборудование, участие артистов, количество гостей, меню и прочие условия, а главное, от ваших
+                    пожеланий и предпочтений, планируемого бюджета. Из всего этого уже будет складываться смета затрат
+                    на мероприятие. Все эти моменты обсуждаются непосредственно на личной встрече с администратором
+                    банкетного зала!</p>
+                </div>
+
+                <div class="box-text">
+                  <ul class="list-cube my-ul">
+                    <li>Стоимость услуг по организации/координации события от банкетного зала Атриум Холл составляет 5%
+                      от
+                      общей суммы сметы.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- MOBILE ACCORDION -->
+          <div class="accordion d-lg-none" id="priceAccordion">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#mob1">
+                  Аренда банкетного зала
+                </button>
+              </h2>
+              <div id="mob1" class="accordion-collapse collapse show" data-bs-parent="#priceAccordion">
+                <div class="accordion-body">
+                  <h4>Аренда зала для мероприятий:</h4>
+                  <div class="price-big">120 000 <span>руб</span></div>
+                  <p>До 100 гостей — за весь день мероприятия</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#mob2">
+                  Почасовая аренда банкетного зала
+                </button>
+              </h2>
+              <div id="mob2" class="accordion-collapse collapse" data-bs-parent="#priceAccordion">
+                <div class="accordion-body">
+                  <h4>Проведение презентаций:</h4>
+                  <div class="price-big">70 000 <span>руб</span></div>
+                  <p>С 10:00 до 17:00</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#mob3">
+                  Мероприятие под ключ
+                </button>
+              </h2>
+              <div id="mob3" class="accordion-collapse collapse" data-bs-parent="#priceAccordion">
+                <div class="accordion-body">
+                  <h4>Мероприятие под ключ:</h4>
+                  <div class="price-big">от 250 000 <span>руб</span></div>
+                  <p>Полная организация события</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
     </div>
