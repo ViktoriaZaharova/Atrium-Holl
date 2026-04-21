@@ -169,3 +169,16 @@ $(function(){
   });
 
 });
+
+$(document).ready(function () {
+
+  $('.bottom-tabs .variant-btn').on('click', function () {
+    let btn = $(this);
+    let img = btn.data('img');
+    let block = btn.closest('.tab-pane');
+
+    btn.addClass('active').siblings().removeClass('active');
+    block.find('.seating-main-img').attr('src', img);
+  });
+
+});

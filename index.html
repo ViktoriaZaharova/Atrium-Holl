@@ -77,7 +77,7 @@
           <div class="video-wrapper w-100">
             <div class="video-wrapper__text">Уникальная еvent-площадка премиум-класса</div>
 
-            <video width="100%" controls poster="img/video-preview.jpg" class="video-box">
+            <video width="100" controls poster="img/video-preview.jpg" class="video-box">
               <source src="img/atrium-video.mp4" type="video/mp4" />
             </video>
           </div>
@@ -352,14 +352,107 @@
   <section class="variable p-200" id="variable">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <h2>Варианты рассадки</h2>
+        <div class="col-12 col-lg-6">
+          <div class="variable-content">
+            <h2>Варианты рассадки</h2>
 
+            <!-- Верхние табы -->
+            <ul class="nav nav-tabs seating-top-nav" id="seatingTopTabs" role="tablist">
+              <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#banquet"
+                  type="button">БАНКЕТ</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#buffet" type="button">ФУРШЕТ</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#conference"
+                  type="button">КОНФЕРЕНЦИЯ</button>
+              </li>
+            </ul>
+
+            <div class="variable-advantages d-none d-lg-flex">
+              <h3>Вы так же можете провести на нашей площадке свое уникальное мероприятие!</h3>
+              <div class="box-text">
+                <p>Особенность Атриум Холл в просторном зале – вы можете зонировать пространство, переставлять экран и
+                  сцену
+                  на свое усмотрение, задействовать любые варианты мебели (фуршетные стойки, прямоугольные и круглые
+                  столы,
+                  несколько видов стульев), а универсальный дизайн помещения легко адаптируется под тематику любого
+                  события,
+                  и так же дорого и уместно будет смотреться без исполнения декора.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="tab-content seating-content">
+
+            <!-- БАНКЕТ -->
+            <div class="tab-pane fade show active" id="banquet">
+              <div class="row align-items-center">
+
+                <div class="col-12 text-center">
+                  <img src="img/sheme.png" class="img-fluid seating-main-img" alt="">
+
+                  <div class="bottom-tabs">
+                    <button class="variant-btn active" data-img="img/sheme.png">ВАРИАНТ 1</button>
+                    <button class="variant-btn" data-img="img/callback-bg.jpg">ВАРИАНТ 2</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- ФУРШЕТ -->
+            <div class="tab-pane fade" id="buffet">
+              <div class="row align-items-center">
+
+                <div class="col-12 text-center">
+                  <img src="img/sheme.png" class="img-fluid seating-main-img" alt="">
+
+                  <div class="bottom-tabs">
+                    <button class="variant-btn active" data-img="img/sheme.png">ВАРИАНТ 1</button>
+                    <button class="variant-btn" data-img="img/callback-bg.jpg">ВАРИАНТ 2</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- КОНФЕРЕНЦИЯ -->
+            <div class="tab-pane fade" id="conference">
+              <div class="row align-items-center">
+
+                <div class="col-12 text-center">
+                  <img src="img/sheme.png" class="img-fluid seating-main-img" alt="">
+                  <div class="bottom-tabs">
+                    <button class="variant-btn active" data-img="img/sheme.png">ВАРИАНТ 1</button>
+                    <button class="variant-btn" data-img="img/callback-bg.jpg">ВАРИАНТ 2</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="variable-advantages d-block d-lg-none">
+              <h3>Вы так же можете провести на нашей площадке свое уникальное мероприятие!</h3>
+              <div class="box-text">
+                <p>Особенность Атриум Холл в просторном зале – вы можете зонировать пространство, переставлять экран и
+                  сцену
+                  на свое усмотрение, задействовать любые варианты мебели (фуршетные стойки, прямоугольные и круглые
+                  столы,
+                  несколько видов стульев), а универсальный дизайн помещения легко адаптируется под тематику любого
+                  события,
+                  и так же дорого и уместно будет смотреться без исполнения декора.</p>
+              </div>
+            </div>
         </div>
       </div>
     </div>
   </section>
-
 
   <section class="prices bg-white" id="prices">
     <div class="container">
@@ -622,7 +715,7 @@
                   </svg>
                 </button>
               </div>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              <div id="collapseOne" class="accordion-collapse collapse show" 
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <div class="box-text">
@@ -642,7 +735,7 @@
                   </svg>
                 </button>
               </div>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              <div id="collapseTwo" class="accordion-collapse collapse" 
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <div class="box-text">
@@ -662,7 +755,7 @@
                   </svg>
                 </button>
               </div>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              <div id="collapseThree" class="accordion-collapse collapse" 
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <div class="box-text">
@@ -748,7 +841,7 @@
     </div>
   </section>
 
-  <section class="contacts" id="contacts">
+  <div class="contacts" id="contacts">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-6">
@@ -805,7 +898,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
   <footer>
     <div class="container">

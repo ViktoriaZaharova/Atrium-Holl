@@ -726,3 +726,68 @@
 .accordion-price .accordion-body {
   padding: 40px 0 0;
 }
+
+.seating-top-nav {
+  margin: 80px 0 0;
+}
+.seating-top-nav .nav-link:before {
+  background: #8A9099;
+}
+.seating-top-nav .nav-link.active {
+  background: transparent;
+  color: #fff;
+}
+.seating-top-nav .nav-link.active:before {
+  background: #fff;
+}
+
+.variable-content {
+  max-width: 607px;
+  width: 100%;
+}
+
+.variable-advantages {
+  margin: 143px 0 0;
+}
+.variable-advantages h3 {
+  max-width: 580px;
+}
+.variable-advantages .box-text {
+  margin: 30px 0 0;
+  color: #8A9099;
+}
+
+.bottom-tabs {
+  width: 100%;
+  margin: 26px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.variant-btn {
+  height: 59px;
+  background: #16181C;
+  margin: 0 10px 0 0;
+  padding: 10px 30px;
+  font-size: 14px;
+  line-height: 110%;
+  color: #fff;
+}
+.variant-btn:last-child {
+  margin: 0;
+}
+.variant-btn:hover {
+  background: #0E0E0E;
+  color: #fff;
+}
+.variant-btn.active {
+  background: #fff;
+  color: #0E0E0E;
+}

@@ -394,6 +394,49 @@
   .btn-book-event {
     margin: 40px 0 0;
   }
+  .variable-content {
+    max-width: none;
+  }
+  .variable-advantages {
+    margin: 60px 0 0;
+  }
+  .bottom-tabs {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .seating-top-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: none;
+    width: 100%;
+    border: none;
+  }
+  .seating-top-nav .nav-item {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0 5px;
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+  }
+  .seating-top-nav .nav-link {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 10px;
+  }
+  .seating-top-nav .nav-link::before {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .logo-developer {
@@ -520,6 +563,13 @@
   }
   .modal-content {
     padding: 40px;
+  }
+  .nav-tabs {
+    font-size: 16px;
+    letter-spacing: -0.3px;
+  }
+  .seating-top-nav {
+    margin: 40px 0 0;
   }
 }
 @media only screen and (max-width: 420px) {
