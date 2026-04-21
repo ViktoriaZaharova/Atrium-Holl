@@ -105,6 +105,24 @@
   .benefits-row__content .h3 span {
     font-size: 24px;
   }
+  .menu-document {
+    margin-right: 20px;
+  }
+  .contacts-card {
+    margin: 0 40px 20px 0;
+  }
+  .contacts-card:last-child {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .formats .advantages-scene-column {
+    margin-bottom: 40px;
+    padding-top: 0;
+  }
+  h2, .h2 {
+    font-size: 36px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   h3, .h3 {
@@ -157,6 +175,28 @@
   .formats .advantages-scene-column:nth-child(even) {
     padding-top: 0;
   }
+  .contacts-content {
+    padding-top: 60px;
+  }
+  footer .logo {
+    margin: 0 0 20px;
+  }
+  .logo-developer {
+    margin: 40px 0 0;
+  }
+  .menu-document {
+    width: 100%;
+    margin: 0 0 6px;
+  }
+  .menu-document:last-child {
+    margin: 0;
+  }
+  .menu-document li {
+    margin: 0 0 6px;
+  }
+  .menu-document li:last-child {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   h1, .h1 {
@@ -169,11 +209,26 @@
   .pt-120 {
     padding-top: 60px;
   }
+  .pb-120 {
+    padding-bottom: 60px;
+  }
   .p-200 {
     padding: 120px 0;
   }
   .mb-40 {
     margin-bottom: 20px;
+  }
+  label {
+    margin: 0 0 20px;
+  }
+  label:last-child {
+    margin: 0;
+  }
+  input, select, textarea, .form-callback {
+    font-size: 16px;
+  }
+  .form-footer {
+    margin: 20px 0 0;
   }
   .box-text {
     font-size: 16px;
@@ -289,13 +344,73 @@
   .variable {
     padding: 0 0 60px;
   }
+  .question h2 {
+    margin-bottom: 40px;
+  }
   .accordion-item::before {
     width: 100%;
   }
+  .accordion-button__icon {
+    margin-right: 0;
+  }
+  .client-box {
+    min-width: 200px;
+    margin: 0 10px 0 0;
+  }
+  .callback-wrapper {
+    padding: 40px;
+  }
+  .map-wrapper {
+    width: 100%;
+    height: 400px;
+  }
 }
 @media only screen and (max-width: 768px) {
-  .mb-40 {
-    margin-bottom: 20px;
+  .logo-developer {
+    width: 100%;
+    max-width: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .logo-developer svg {
+    max-width: 125px;
+  }
+  .logo-developer span {
+    margin: 0 auto 0 0;
+  }
+  .contacts-content-row {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .list-social {
+    margin: 0 0 20px auto;
+  }
+  .contacts-card {
+    width: calc(100% - 120px);
+    margin: 0 0 20px;
+    font-size: 18px;
+    letter-spacing: -0.7px;
+  }
+  .address-card {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+  }
+  .address-card br {
+    display: none;
+  }
+  .contacts-content__img {
+    margin: 20px 0 0;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -349,6 +464,32 @@
   .accordion-item:last-child {
     margin: 0;
   }
+  .clients h2 {
+    margin: 0;
+  }
+  .clients-wrapper {
+    padding: 0 24px;
+  }
+  .client-box {
+    min-width: 100px;
+    margin: 0;
+    padding: 0 5px;
+  }
+  .contacts-content {
+    padding-top: 40px;
+  }
+  .map-wrapper {
+    height: 260px;
+  }
+  .ui-datepicker {
+    padding: 20px 13px;
+    max-width: 352px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .ui-datepicker {
+    max-width: 270px;
+  }
 }
 @media only screen and (max-width: 370px) {
   .benefits-row__content .h3 {
@@ -366,5 +507,17 @@
   }
   .logo {
     max-width: 120px;
+  }
+  .callback-wrapper {
+    padding: 20px;
+  }
+  .amount span {
+    right: 15px;
+  }
+  .amount input {
+    padding-right: 37px;
+  }
+  .contacts-card a {
+    font-size: 20px;
   }
 }

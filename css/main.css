@@ -246,6 +246,9 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+.client-box:last-child {
+  border: none;
+}
 
 .callback {
   background: url("../img/callback-bg.jpg") no-repeat center;
