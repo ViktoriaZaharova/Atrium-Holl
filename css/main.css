@@ -703,3 +703,26 @@
   line-height: 120%;
   letter-spacing: -1.3px;
 }
+
+.accordion-price .accordion-item {
+  color: #0E0E0E;
+  padding: 0;
+}
+.accordion-price .accordion-item::before {
+  display: none;
+}
+.accordion-price .accordion-button {
+  padding: 0 0 10px;
+  color: #0E0E0E;
+  border-bottom: 1px solid #C7CBD1;
+}
+.accordion-price .accordion-button:not(.collapsed) {
+  border-color: #0E0E0E;
+  font-weight: 600;
+}
+.accordion-price .accordion-button__icon {
+  stroke: #8A9099;
+}
+.accordion-price .accordion-body {
+  padding: 40px 0 0;
+}

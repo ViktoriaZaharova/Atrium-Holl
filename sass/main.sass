@@ -412,7 +412,7 @@
         margin: 0 0 100px
 
 .nav-tabs
-    max-width: 607px    
+    max-width: 607px
     width: 100%
     font-size: 24px
 
@@ -451,7 +451,6 @@
     height: 100%
     padding: 120px 0 120px 40px
     border-left: 1px solid #C7CBD1
-    
 
 .price-card
     width: 100%
@@ -504,5 +503,22 @@
     span
         font-size: 32px
         line-height: 120%
-        letter-spacing: -1.3px    
-    
+        letter-spacing: -1.3px
+
+.accordion-price
+    .accordion-item
+        color: #0E0E0E
+        padding: 0
+        &::before
+            display: none
+    .accordion-button
+        padding: 0 0 10px
+        color: #0E0E0E
+        border-bottom: 1px solid #C7CBD1
+        &:not(.collapsed)
+            border-color: #0E0E0E
+            font-weight: 600
+        &__icon
+            stroke: #8A9099
+    .accordion-body
+        padding: 40px 0 0
