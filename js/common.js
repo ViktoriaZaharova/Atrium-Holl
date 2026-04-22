@@ -214,3 +214,65 @@ $(document).ready(function () {
   });
 
 });
+
+
+$(document).ready(function () {
+
+  const container = $('.gallery-row');
+  const items = container.find('.gallery-column');
+  const btn = container.find('.btn-load-gallery').parent();
+
+  let originalOrder = items.toArray(); // сохраняем исходный порядок
+  let isMobile = false;
+
+  function reorder() {
+    const mobile = $(window).width() < 992;
+
+    // если состояние не изменилось — ничего не делаем
+    if (mobile === isMobile) return;
+
+    isMobile = mobile;
+
+    container.find('.gallery-column').remove();
+
+    if (mobile) {
+      // мобильный порядок
+      let big = $(originalOrder).filter('.col-lg-6');
+      let small = $(originalOrder).filter('.col-lg-3');
+
+      let newOrder = [];
+      let smallIndex = 0;
+
+      big.each(function () {
+        newOrder.push(this);
+
+        for (let i = 0; i < 2; i++) {
+          if (small[smallIndex]) {
+            newOrder.push(small[smallIndex]);
+            smallIndex++;
+          }
+        }
+      });
+
+      while (smallIndex < small.length) {
+        newOrder.push(small[smallIndex]);
+        smallIndex++;
+      }
+
+      container.prepend(newOrder);
+
+    } else {
+      // возвращаем как было
+      container.prepend(originalOrder);
+    }
+
+    container.append(btn); // кнопку всегда в конец
+  }
+
+  reorder();
+
+  $(window).on('resize', function () {
+    reorder();
+  });
+
+});

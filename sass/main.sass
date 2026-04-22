@@ -581,10 +581,18 @@
     width: 100%
     position: relative
     z-index: 1
-    @include d-flex
-    img
-        width: 100%
+    background: #fff
+    display: flex
+    flex-direction: column
+    align-items: center
 
+    &__wrap
+        width: 100%
+        @include d-flex
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
 
 .wedding-description
     position: absolute
