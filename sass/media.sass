@@ -228,7 +228,7 @@
 
     .advantages-row
         overflow-x: auto
-        width: 100%
+        width: calc( 100% + 28px )
         flex-wrap: nowrap
 
     .advantages
@@ -262,12 +262,12 @@
         &__text
             text-align: center
             position: relative
-            order: 1
             margin: 20px auto 40px
             font-size: 28px
             padding: 0
-            max-width: 450px
+            max-width: 490px
             letter-spacing: -1.1px
+            padding: 0 24px
 
     .advantages-scene
         padding: 60px 0 100px
@@ -450,9 +450,6 @@
         margin: 0 10px 0 0
         font-size: 16px
 
-    .video-box
-        height: 350px
-
     .scene-section
         padding: 106px 0
 
@@ -518,9 +515,17 @@
         max-width: none
         width: calc( 100% - 48px )
 
+    .advantages
+        .advantages-column
+            min-width: 380px
+
 @media only screen and (max-width: 420px)
     .ui-datepicker
         max-width: 270px
+
+    .advantages
+        .advantages-column
+            min-width: 320px
 
 @media only screen and (max-width: 370px)
     .benefits-row__content .h3
@@ -551,5 +556,9 @@
     .contacts-card
         a
             font-size: 20px
+
+    .advantages
+        .advantages-column
+            min-width: 280px
 
 
