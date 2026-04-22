@@ -611,6 +611,12 @@
     height: 300px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .wedding-description {
+    max-width: none;
+    width: calc(100% - 48px);
+  }
+}
 @media only screen and (max-width: 420px) {
   .ui-datepicker {
     max-width: 270px;
