@@ -182,3 +182,35 @@ $(document).ready(function () {
   });
 
 });
+
+// btn load gallery
+$(document).ready(function () {
+
+  const items = $('.gallery-column');
+  const btn = $('.btn-load-gallery');
+  const step = 3;
+
+  // считаем сколько уже видно (через CSS)
+  let visibleCount = items.filter(':visible').length;
+
+  // если всё уже видно — скрываем кнопку
+  if (visibleCount >= items.length) {
+    btn.hide();
+  }
+
+  btn.on('click', function (e) {
+    e.preventDefault();
+
+    let hiddenItems = items.filter(':hidden');
+    let nextItems = hiddenItems.slice(0, step);
+
+    nextItems.fadeIn();
+
+    visibleCount += nextItems.length;
+
+    if (visibleCount >= items.length) {
+      btn.fadeOut();
+    }
+  });
+
+});

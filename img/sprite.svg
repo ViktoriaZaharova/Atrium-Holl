@@ -103,7 +103,12 @@
 
 
     <symbol id="close-icon" viewBox="0 0 42 36">
-        <path d="M9.96323 6.82969L31.9632 28.8297M31.75 6.75L9.75 28.75"/>
+        <path d="M9.96323 6.82969L31.9632 28.8297M31.75 6.75L9.75 28.75" />
     </symbol>
+
+    <symbol id="arrow-left" viewBox="0 0 22 22">
+        <path d="M14 3L7.5 10.7943L14 18.5885"/>
+    </symbol>
+
 
 </svg>

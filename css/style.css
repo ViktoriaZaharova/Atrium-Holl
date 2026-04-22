@@ -595,3 +595,52 @@ h4, .h4 {
   opacity: 1;
   color: #5F656E;
 }
+
+.nav-breadcrumb {
+  margin: 0 0 20px;
+  width: 100%;
+}
+
+.breadcrumb {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: -0.2px;
+}
+.breadcrumb li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.breadcrumb a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8A9099;
+}
+.breadcrumb a svg {
+  stroke: #8A9099;
+  margin: 0 10px 0 0;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  fill: none;
+}
+.breadcrumb a:hover {
+  color: #fff;
+}
+.breadcrumb a:hover svg {
+  stroke: #fff;
+}

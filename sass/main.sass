@@ -538,7 +538,6 @@
     max-width: 607px
     width: 100%
 
-
 .variable-advantages
     margin: 143px 0 0
     h3
@@ -553,7 +552,7 @@
     display: flex
     align-items: stretch
     justify-content: flex-end
-    
+
 .variant-btn
     height: 59px
     background: #16181C
@@ -571,3 +570,58 @@
     &.active
         background: #fff
         color: #0E0E0E
+
+.weddings
+    h1
+        margin: 0 auto 40px
+    .h2, .box-text
+        opacity: 0.6
+
+.wedding-image
+    width: 100%
+    position: relative
+    z-index: 1
+    @include d-flex
+    img
+        width: 100%
+
+
+.wedding-description
+    position: absolute
+    left: 50%
+    transform: translate(-50%, 0)
+    top: calc(100% - 120px)
+    z-index: 2
+    text-align: center
+    padding: 40px
+    background: #16181C
+    max-width: 605px
+    width: 100%
+    margin: 0 auto 0
+    .box-text
+        opacity: 1
+
+.gallery-wrapper
+    padding: 200px 0 120px
+
+.btn-load-gallery
+    margin: 30px auto 0
+
+.gallery-column
+    display: none
+    &:nth-child(-n+12)
+        display: block
+
+.gallery-item
+    width: 100%
+    height: 600px
+    overflow: hidden
+    @include d-flex
+    &:hover
+        img
+            transform: scale(1.1)
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        transition: 1.3s ease
